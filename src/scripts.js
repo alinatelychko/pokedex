@@ -2,7 +2,6 @@ let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
-
   function showModal(pokemon) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
@@ -18,7 +17,7 @@ let pokemonRepository = (function () {
     modalBody.append(myImage);
     modalBody.append(titleElement);
     modalBody.append(contentElement);
-    $("#exampleModal").click(function(){
+    $("#exampleModal").click(function () {
       $(button).toggle("modal");
     });
   }
@@ -38,7 +37,6 @@ let pokemonRepository = (function () {
       showDetails(pokemon);
     });
   }
-  
 
   function loadList() {
     return fetch(apiUrl)
