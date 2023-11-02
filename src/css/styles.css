@@ -18,7 +18,7 @@ ul {
   text-align: center;
 }
 
-*/ #image-container {
+#image-container {
   position: absolute;
   margin: auto;
   height: 50px;
